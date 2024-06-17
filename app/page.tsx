@@ -43,7 +43,7 @@ export default function Page() {
   return (
     <>
       <h1>
-        follow <a href="https://warpcast.com/bytebrush">@bytebrush</a>
+        Hellow there got to https://warpcast.com/~/developers/frames to test it.
       </h1>
     </>
   );
