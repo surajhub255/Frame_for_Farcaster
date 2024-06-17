@@ -36,7 +36,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
        {label:'See ETH Image'},
       ],
       image: {
-        src: `${NEXT_PUBLIC_URL}/ETH.png`,
+        src: `${NEXT_PUBLIC_URL}/github.png`,
         aspectRatio: '1:1',
       },
       postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
