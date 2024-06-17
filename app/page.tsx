@@ -5,16 +5,7 @@ import { NEXT_PUBLIC_URL } from './config';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'Get current ETH Price!'
-    },
-
-    {
-      label: 'ETH / USD',
-      action: 'post',
-    },
-    {
-      label: 'ETH / BTC',
-      action: 'post',
+      label: 'See Github Image'
     },
   ],
   image: {
@@ -26,13 +17,12 @@ const frameMetadata = getFrameMetadata({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(NEXT_PUBLIC_URL),
-  title: 'ETH Price',
-  description: 'Get real-time ETH price!',
+  title: 'ETH and Github Image',
+  description: 'See github and eth image',
   openGraph: {
-    title: 'ETH Price',
-    description: 'Get real-time ETH price!',
-    images: [`${NEXT_PUBLIC_URL}/ETH.png`],
+    title: 'ETH and Github Image',
+    description: 'See github and eth image',
+    images: [`${NEXT_PUBLIC_URL}/github.png`],
   },
   other: {
     ...frameMetadata,
