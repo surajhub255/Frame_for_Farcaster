@@ -6,6 +6,7 @@ const frameMetadata = getFrameMetadata({
   buttons: [
     {
       label: 'Get current ETH Price!',
+      action: 'post',
     },
 
     {
