@@ -11,7 +11,9 @@ const frameMetadata = getFrameMetadata({
       label: 'Buy',
     },
     {
+      action: 'link',
       label: 'More Imformation',
+      target: 'https://www.google.com'
     }
   ],
   image: {
@@ -28,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'ETH and Github Image',
     description: 'See github and eth image',
-    images: [`${NEXT_PUBLIC_URL}/github.png`],
+    images: [`${NEXT_PUBLIC_URL}/ETH.png`],
   },
   other: {
     ...frameMetadata,
