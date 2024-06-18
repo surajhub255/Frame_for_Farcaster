@@ -25,7 +25,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
   // }
   let state = { frame: 'start' };
   try {
-    state = JSON.parse(decodeURIComponent(message.state?.serialized));
+    // state = JSON.parse(decodeURIComponent(message.state?.serialized));
   } catch (e) {
     // Note that this error will always be triggered by the first frame
     console.error(e);
@@ -50,7 +50,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
         src: `${NEXT_PUBLIC_URL}/github.png`,
         aspectRatio: '1:1',
       },
-      state: { frame: 'start' },
+      // state: { frame: 'start' },
       postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
     }),
     1: 'Next',
