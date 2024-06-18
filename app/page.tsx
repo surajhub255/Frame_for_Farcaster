@@ -5,8 +5,14 @@ import { NEXT_PUBLIC_URL } from './config';
 const frameMetadata = getFrameMetadata({
   buttons: [
     {
-      label: 'See Github Image'
+      label: 'Next'
     },
+    {
+      label: 'Buy',
+    },
+    {
+      label: 'More Imformation',
+    }
   ],
   image: {
     src: `${NEXT_PUBLIC_URL}/ETH.png`,
