@@ -1,36 +1,34 @@
-import { getFrameMetadata } from '@coinbase/onchainkit';
+import { getFrameMetadata } from '@coinbase/onchainkit/frame';
 import type { Metadata } from 'next';
 import { NEXT_PUBLIC_URL } from './config';
+import { text } from 'stream/consumers';
 
 const frameMetadata = getFrameMetadata({
+
   buttons: [
     {
-      label: 'Next'
+      label: 'Start',
     },
-    {
-      label: 'Buy',
-    },
-    {
-      action: 'link',
-      label: 'More Imformation',
-      target: 'https://www.google.com'
-    }
+   
   ],
   image: {
-    src: `${NEXT_PUBLIC_URL}/ETH.png`,
+    src: `${NEXT_PUBLIC_URL}/3.png`,
     aspectRatio: '1:1',
   },
-
-  postUrl: `${NEXT_PUBLIC_URL}/api/frame`,
+  input: {
+    text: 'write your name',
+    
+  },
+  postUrl: `${NEXT_PUBLIC_URL}/api/frame?id=1`,
 });
 
 export const metadata: Metadata = {
-  title: 'ETH and Github Image',
-  description: 'See github and eth image',
+  title: 'zizzamia.xyz',
+  description: 'LFG',
   openGraph: {
-    title: 'ETH and Github Image',
-    description: 'See github and eth image',
-    images: [`${NEXT_PUBLIC_URL}/ETH.png`],
+    title: 'zizzamia.xyz',
+    description: 'LFG',
+    images: [`${NEXT_PUBLIC_URL}/1.png`],
   },
   other: {
     ...frameMetadata,
@@ -40,9 +38,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>
-        Hellow there got to https://warpcast.com/~/developers/frames to test it.
-      </h1>
+      <h1>chicken.xyz</h1>
     </>
   );
 }
