@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1>chicken.xyz</h1>
+      <h1>Hellow there go to https://warpcast.com/~/developers/frames to test it.</h1>
     </>
   );
 }
